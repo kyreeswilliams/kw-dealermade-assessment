@@ -91,10 +91,5 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			(function($){
-				$("img#gallery-mainpicture-image").imagePanning();
-			})(jQuery);
-		</script>
 	</body>
 </html>
