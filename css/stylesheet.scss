@@ -10,11 +10,11 @@ body{
 		position: absolute;
 		z-index: 99999;
 		background-color: $blue;
-		-webkit-transform-style: preserve-3d;
-		-moz-transform-style: preserve-3d;
-		transform-style: preserve-3d;
+		display: flex;
 		transition: 0.5s linear all;
 		opacity: 1;
+		flex-direction: row;
+		align-items: center;
 		&.ng-hide-remove{
 			opacity: 0;
 			display: block!important;
@@ -24,8 +24,7 @@ body{
 		}
 		div.spinner{
 			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
+			vertical-align: middle;
 		}
 	}
 	header{
