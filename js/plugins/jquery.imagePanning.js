@@ -80,7 +80,7 @@
 				},1);
 				}).each(function(){ //run load fn even if cached
 					if(this && this.complete){
-						$(this).load();
+						//$(this).load();
 					}
 				})
 				//when image changes
