@@ -79,7 +79,9 @@
 						$this.addClass("loaded").trigger("mousemove",1); 
 				},1);
 				}).each(function(){ //run load fn even if cached
-					if(this.complete) $(this).load();
+					if(this && this.complete){
+						$(this).load();
+					}
 				})
 				//when image changes
 				.on("load", function(){
