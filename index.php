@@ -23,7 +23,7 @@
 		<title>KW Dealermade Photo Gallery</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body ng-app="dealermadeDemo" ng-cloak>
+	<body ng-app="dealermadeDemo">
 		<div id="loader" ng-show="loading">
 		    <div class="spinner">
 			  <div class="double-bounce1"></div>
@@ -91,10 +91,10 @@
 				</div>
 			</div>
 		</div>
-		<script>
+		<!-- <script>
 			(function($){
 				$("img#gallery-mainpicture-image").imagePanning();
 			})(jQuery);
-		</script>
+		</script> -->
 	</body>
 </html>
