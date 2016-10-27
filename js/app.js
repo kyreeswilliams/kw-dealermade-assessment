@@ -61,9 +61,17 @@ app.directive('slickSlider',function($timeout){
 app.directive('imagePanning',function($timeout){
 	return {
 		restrict: 'A',
-        link: function(scope, element) {
+        /*link: function(scope, element) {
         	console.log("Image panning was run");
         	$(element).imagePanning();
+        }*/
+        link: function(scope, element) {
+            scope.$watch('mainpicture', function(newValue, oldValue) {
+                if (newValue){
+                	console.log("Image panning was run");
+                    $(element).imagePanning();
+                }
+            }, true);
         }
 	}
 }); 
