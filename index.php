@@ -93,7 +93,7 @@
 		</div>
 		<script>
 			(function($){
-				$("div#gallery-mainpicture img").imagePanning();
+				$("img#gallery-mainpicture-image").imagePanning();
 			})(jQuery);
 		</script>
 	</body>
