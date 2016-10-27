@@ -30,66 +30,7 @@
 				<div class="double-bounce2"></div>
 			</div>
 		</div>
-		<header ng-controller="infoController">
-			<div class="container">
-				<h1>
-					<strong>
-						{{ vehicleData.year ? vehicleData.year + ' ' : '' }}
-						{{ vehicleData.make ? vehicleData.make + ' ' : '' }}
-						{{ vehicleData.model ? vehicleData.model + ' ' : '' }}
-						{{ vehicleData.trim ? vehicleData.trim + ' ' : '' }}
-					</strong>
-					<span class="extraneous">Photo Gallery</span>
-				</h1>
-			</div>
-		</header>
-		<div id="gallery" ng-controller="galleryController">
-			<div id="gallery-mainpicture-outer">
-				<div class="label-wrapper">
-					<div class="label">Drag mouse or finger here to pan image</div>
-				</div>
-				<div id="gallery-mainpicture">
-					<img id="gallery-mainpicture-image" ng-src="{{ mainpicture }}" image-panning/>
-				</div>
-			</div>
-			<div class="container">
-				<div class="label">Scroll left / right to see images</div>
-				<div
-				id="gallery-carousel"
-				data-ng-if="pictures" 
-				slick-slider="{
-					dots: false, 
-					arrows: true, 
-					draggable: true,
-					slidesToShow:5,
-					infinite:false,
-					adaptiveHeight:true,
-					prevArrow:&quot;<div class='button-outer prev'><button type='button' class='slick-prev'><i class='fa fa-arrow-circle-left fa-lg'></i></button></div>&quot;, 
-					nextArrow:&quot;<div class='button-outer next'><button type='button' class='slick-next'><i class='fa fa-arrow-circle-right fa-lg'></i></button></div>&quot;,  
-					responsive: [
-					    {
-							breakpoint: 991,
-							settings: {
-								slidesToShow: 3
-							}
-					    },
-					    {
-					    	breakpoint: 500,
-					    	settings: {
-					    		slidesToShow: 2,
-					    		slidesToScroll: 2,
-					    		arrows: false
-					    	}
-					    }
-				    ]
-				}">
-	  				<div id="previous-placeholder" class="placeholder"></div>
-					<div ng-repeat="(key, picture) in pictures">
-						<img ng-src="{{ picture.directory + '/main_' + picture.filename  }}" ng-click="loadMainImage(key)">
-					</div>
-					<div id="next-placeholder" class="placeholder"></div>
-				</div>
-			</div>
-		</div>
+		<div ng-include="'templates/info.html'"></div>
+		<div ng-include="'templates/gallery.html'"></div>
 	</body>
 </html>
