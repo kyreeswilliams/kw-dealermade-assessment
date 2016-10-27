@@ -1,0 +1,177 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #efefef; }
+  body div#loader {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 99999;
+    background-color: #009cff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: 0.5s linear all;
+    opacity: 1; }
+    body div#loader.ng-hide-remove {
+      opacity: 0;
+      display: block !important; }
+    body div#loader.ng-hide-remove, body div#loader.ng-hide-remove-active {
+      opacity: 1; }
+    body div#loader div.spinner {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+  body header {
+    background-color: #fff;
+    padding: 15px 0; }
+    body header h1 {
+      margin: 0;
+      color: #009cff; }
+      @media screen and (max-width: 991px) {
+        body header h1 {
+          font-size: 26px; } }
+      @media screen and (max-width: 767px) {
+        body header h1 {
+          font-size: 20px; }
+          body header h1 span.extraneous {
+            display: none; } }
+  body div#gallery div.container {
+    padding: 0 8px; }
+  body div#gallery div#gallery-mainpicture-outer {
+    position: relative; }
+    body div#gallery div#gallery-mainpicture-outer div.label-wrapper {
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      text-align: center;
+      top: 40px;
+      transition: opacity .6s linear .85s;
+      opacity: 0; }
+      body div#gallery div#gallery-mainpicture-outer div.label-wrapper.loaded {
+        opacity: 1; }
+      body div#gallery div#gallery-mainpicture-outer div.label-wrapper div.label {
+        background-color: #009cff;
+        color: #fff;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: normal;
+        padding: 1em 4em; }
+        @media screen and (max-width: 991px) {
+          body div#gallery div#gallery-mainpicture-outer div.label-wrapper div.label {
+            font-size: 12px;
+            padding: 1em 2em; } }
+    body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture {
+      position: relative;
+      width: 100%;
+      overflow: auto;
+      resize: both;
+      height: 500px; }
+      @media screen and (max-width: 991px) {
+        body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture {
+          height: 300px; } }
+      body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture img {
+        opacity: 0;
+        transition: opacity .6s linear .85s;
+        max-width: 2700px; }
+        @media screen and (max-width: 767px) {
+          body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture img {
+            width: 1500px; } }
+        body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture img.loaded {
+          opacity: 1; }
+      body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture div.img-pan-container,
+      body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture div.img-pan-container img {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+      body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture div.img-pan-container {
+        position: relative;
+        overflow: hidden;
+        cursor: crosshair;
+        height: 100%;
+        width: 100%; }
+      body div#gallery div#gallery-mainpicture-outer div#gallery-mainpicture div.img-pan-container img {
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        position: absolute;
+        top: 0;
+        left: 0; }
+  body div#gallery div.container {
+    text-align: center; }
+    body div#gallery div.container div.label {
+      margin-top: 50px;
+      margin-bottom: 15px;
+      background-color: #009cff;
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      padding: 1em 2em;
+      font-weight: normal;
+      display: none; }
+      @media screen and (max-width: 500px) {
+        body div#gallery div.container div.label {
+          display: inline-block; } }
+  body div#gallery div#gallery-carousel {
+    opacity: 0;
+    position: relative;
+    transition: opacity .6s linear .85s;
+    text-align: center; }
+    @media screen and (min-width: 501px) {
+      body div#gallery div#gallery-carousel {
+        margin-top: 50px; } }
+    body div#gallery div#gallery-carousel div.button-outer {
+      width: 20%;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      padding: 0 7px;
+      z-index: 99;
+      overflow: hidden;
+      transition: 0.25s opacity ease-in-out; }
+      @media screen and (max-width: 991px) {
+        body div#gallery div#gallery-carousel div.button-outer {
+          width: 33%; } }
+      body div#gallery div#gallery-carousel div.button-outer.prev {
+        left: 0; }
+      body div#gallery div#gallery-carousel div.button-outer.next {
+        right: 0; }
+      body div#gallery div#gallery-carousel div.button-outer button {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 4px;
+        display: table-cell;
+        vertical-align: middle;
+        transition: 0.25s background-color ease-in-out; }
+        body div#gallery div#gallery-carousel div.button-outer button:hover {
+          background-color: #009cff; }
+        body div#gallery div#gallery-carousel div.button-outer button:focus {
+          outline: none; }
+        body div#gallery div#gallery-carousel div.button-outer button i {
+          color: #fff;
+          font-size: 100px; }
+          @media screen and (max-width: 991px) {
+            body div#gallery div#gallery-carousel div.button-outer button i {
+              font-size: 60px; } }
+      body div#gallery div#gallery-carousel div.button-outer[aria-disabled=true] {
+        opacity: 0.4; }
+        body div#gallery div#gallery-carousel div.button-outer[aria-disabled=true] button {
+          cursor: default; }
+          body div#gallery div#gallery-carousel div.button-outer[aria-disabled=true] button:hover {
+            background-color: rgba(0, 0, 0, 0.5); }
+    body div#gallery div#gallery-carousel div.slick-slide {
+      overflow: hidden;
+      padding: 0 8px;
+      height: auto; }
+      body div#gallery div#gallery-carousel div.slick-slide:focus {
+        outline: none; }
+      body div#gallery div#gallery-carousel div.slick-slide img {
+        border-radius: 4px;
+        width: 100%; }
+    @media screen and (max-width: 500px) {
+      body div#gallery div#gallery-carousel div.placeholder {
+        display: none; } }
+
+/*# sourceMappingURL=stylesheet.css.map */
