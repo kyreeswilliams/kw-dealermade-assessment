@@ -86,11 +86,9 @@
 					$(this).trigger("mousemove", 1);
 				})
 				.parent().on("mouseenter touchstart",function(){
-					console.log("Entered");
 					$("div.label-wrapper").removeClass("loaded");
 				})
 				.parent().on("mouseleave touchend",function(){
-					console.log("Left");
 					$("div.label-wrapper").addClass("loaded");
 				})
 				//panning fn
