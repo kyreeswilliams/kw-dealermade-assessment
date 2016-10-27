@@ -62,7 +62,6 @@ app.directive('imagePanning',function($timeout){
 	return {
 		restrict: 'A',
         link: function(scope, element) {
-        	console.log("Image panning was run");
         	$(element).imagePanning();
         }
 	}

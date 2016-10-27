@@ -28,7 +28,6 @@ app.controller('galleryController', ['$scope', '$rootScope', 'ApiData', function
 		});
 
 		/* Assign first picture to main gallery image */
-		//$scope.loadMainImage(0);
 		$scope.mainpicture = $scope.pictures[0].url;
 		$rootScope.loading = false;
 	});
