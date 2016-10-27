@@ -10,12 +10,7 @@ app.controller('galleryController', ['$scope', '$rootScope', 'ApiData', function
 	$rootScope.loading = true;
 
 	$scope.loadMainImage = function(id){
-		/*console.log(id);*/
 		$scope.mainpicture = $scope.pictures[id].url;
-		/*$scope.gallery = $("div#gallery-mainpicture img").imagePanning().parent().on("mouseleave touchend MSPointerleave pointerleave",function(){
-		  $(this).trigger("mousemove", 1);
-		  $
-		});;*/
 	}
 	
 	/* Retrieve API info wrapper */

@@ -49,8 +49,7 @@
 					<div class="label">Drag mouse or finger here to pan image</div>
 				</div>
 				<div id="gallery-mainpicture">
-					<!-- <img id="gallery-mainpicture-image" ng-src="{{ mainpicture }}" image-panning/> -->
-					<img id="gallery-mainpicture-image" ng-src="http://dealermade-io.s3.amazonaws.com/vehicle_pictures/2393845/c9c19abc-f80b-4cac-ba27-9c67773827c2.jpg" image-panning/>
+					<img id="gallery-mainpicture-image" ng-src="{{ mainpicture }}" image-panning/>
 				</div>
 			</div>
 			<div class="container">
